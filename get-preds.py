@@ -41,7 +41,6 @@ def save_preds(path_img, path_preds=None):
 
     for file in files:
         # open file
-        print(os.getcwd())
         x = open_image(file)
 
         # get preds
