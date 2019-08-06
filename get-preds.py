@@ -23,21 +23,25 @@ parser.add_argument('--path_preds', type=str, default = None,
                     help="path where you'd like to store the predictions")
 args = parser.parse_args()
 
-path = args.path_base
+path       = args.path_base
+path_img   = args.path_img
+path_preds = args.path_preds
 
 from setup import *
 
-x = get_model(Path(path))
+learn, data = get_model_data(Path(path))
+learn = learn.to_fp32()
 
-def save_preds(path_img, path_save=None):
-    print(path_save)
-    os.mkdir(path_save) if not os.path.exists(path_save) else None
+def save_preds(path_img, path_preds=None):
+    os.mkdir(path_preds) if not os.path.exists(path_preds) else None
 
-    os.chdir(path)
+    os.chdir(path_img)
     files = [f for f in os.listdir(path_img) if f.endswith(('.jpg', '.jpeg', '.png'))]
+    print(files)
 
     for file in files:
         # open file
+        print(os.getcwd())
         x = open_image(file)
 
         # get preds
@@ -62,10 +66,10 @@ def save_preds(path_img, path_save=None):
 
         # save to disk
         fname = file.rpartition('.')[0] + '_preds.csv'
-        if path_save is not None:
-            df.to_csv(Path(path_save)/fname, index=False)
+        if path_preds is not None:
+            df.to_csv(Path(path_preds)/fname, index=False)
 
         else:
             df.to_csv(Path(path_img)/fname, index=False)
 
-save_preds(args.path_img, args.path_preds)
+save_preds(path_img, path_preds)
