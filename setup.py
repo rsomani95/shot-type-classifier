@@ -28,7 +28,7 @@ def get_tfms(): return get_transforms(do_flip = True,
                                       p_lighting = 0.85,
                                       xtra_tfms = xtra_tfms())
 
-def get_model(path):
+def get_model_data(path):
     path = Path(path)
     data = ImageDataBunch.from_folder(path, 'train', 'valid', size = (375, 666), ds_tfms = get_tfms(), bs=1,
                                       resize_method = ResizeMethod.SQUISH,
@@ -40,4 +40,4 @@ def get_model(path):
 
     learn.load(path/'models'/'shot-type-classifier');
 
-    return learn
+    return learn, data
