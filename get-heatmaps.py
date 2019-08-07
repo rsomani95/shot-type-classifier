@@ -35,7 +35,7 @@ path_img = args.path_img
 path_hms = args.path_hms
 alpha    = args.alpha
 
-from setup import *
+from initialise import *
 
 ###############################################################################
 ##############################  SETUP  ########################################

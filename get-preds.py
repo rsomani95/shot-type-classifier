@@ -27,7 +27,7 @@ path       = args.path_base
 path_img   = args.path_img
 path_preds = args.path_preds
 
-from setup import *
+from initialise import *
 
 learn, data = get_model_data(Path(path))
 learn = learn.to_fp32()
