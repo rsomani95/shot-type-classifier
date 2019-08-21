@@ -68,7 +68,7 @@ After downloading the directory, run `bash get_data_model.sh` to download the mo
 ```bash
 python get-preds.py                     \
     --path_base  ~/shot-type-classifier \
-    --path_img   ~/images/              \
+    --path_img   ~/images               \
     --path_preds ~/images/preds         \
 ```
 
@@ -83,7 +83,7 @@ Where `path_base` is the directory path, `path_img` the path to the images you w
 ```bash
 python get-heatmaps.py                 \
     --path_base ~/shot-type-classifier \
-    --path_img  ~/images/              \
+    --path_img  ~/images               \
     --path_hms  ~/images/heatmaps      \
     --alpha 0.8
 ```
