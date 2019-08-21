@@ -75,7 +75,7 @@ python get-preds.py                 \
 Where `path_base` is the directory path, `path_img` the path to the images you want to evaluate, and `path_preds` where you'd like to store the predictions (`.csv` files). The script create the `~/images/preds` folder if it doesn't exist.
 
 <p align='center'>
-  <img src='README_imgs/shot13-0001-ccef6be9-7bda-435c-8c75-d2dfcc768e94.png' width='425'/> <img src='README_imgs/preds.png' width='405'/>
+  <img src='README_imgs/shot13-0001-ccef6be9-7bda-435c-8c75-d2dfcc768e94.png' width='425'/> <img src='README_imgs/preds.png' width='380'/>
 </p>
 
 <h4> Heatmaps </h4>
