@@ -55,15 +55,15 @@ In the not so distant future, it will also recognise:
   <img src='README_imgs/12_years_a_slave_1733-a1c60a95-f888-4e0f-95bd-76deab52d637.jpg_cropped.jpg' width='425'/> <img src='README_imgs/ex-machina_05-f38cd0f1-e4a2-44df-b833-5c7b0e3376e0.jpg_cropped.jpg' width='425'/>
 </p>
 
-<h4> Requirements </h4>
+<h3> Requirements </h3>
 
 `fastai` — Installation instructions [here](https://docs.fast.ai/install.html). You can use this code _without a GPU._
 
-<h4> Usage </h4>
+<h3> Usage </h3>
 
 After downloading the directory, run `bash get_data_model.sh` to download the model and the validation set. A dummy training set is downloaded too to enable the generation of heatmaps.
 
-<h6> Predict Shot Types </h6>
+<h4> Predict Shot Types </h4>
 
 ```bash
 python get-preds.py                 \
@@ -78,7 +78,7 @@ Where `path_base` is the directory path, `path_img` the path to the images you w
   <img src='README_imgs/shot13-0001-ccef6be9-7bda-435c-8c75-d2dfcc768e94.png' width='425'/> <img src='README_imgs/preds.png' width='405'/>
 </p>
 
-<h6> Heatmaps </h6>
+<h4> Heatmaps </h4>
 
 ```bash
 python get-heatmaps.py                 \
