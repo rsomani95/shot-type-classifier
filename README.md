@@ -85,6 +85,8 @@ insert table here
 
 Where `path_base` is the directory path, `path_img` the path to the images you want to evaluate, `path_hms` where you'd like to store the heatmaps, and `alpha` the blending value of the heatmap with the original image. An `alpha` value of `1.0` produces the heatmap only. The script create the `~/images/heatmaps` folder if it doesn't exist.
 
+<img src="README_imgs/tree-of-life1-49fe5c84-1c97-4a03-b245-97062d214db4.jpg" width="425"/> <img src="README_imgs/img_2_heatmap-21d792f5-3826-4e9e-af57-b1b18d9210a2.png" width="425"/> 
+
 ![](README_imgs/tree-of-life1-49fe5c84-1c97-4a03-b245-97062d214db4.jpg)
 
 ![](README_imgs/img_2_heatmap-21d792f5-3826-4e9e-af57-b1b18d9210a2.png)
