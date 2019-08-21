@@ -66,7 +66,7 @@ After downloading the directory, run `bash get_data_model.sh` to download the mo
 <h4> Predict Shot Types </h4>
 
 ```bash
-python get-preds.py                 \
+python get-preds.py                     \
     --path_base  ~/shot-type-classifier \
     --path_img   ~/images/              \
     --path_preds ~/images/preds         \
