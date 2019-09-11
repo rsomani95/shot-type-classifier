@@ -5,9 +5,11 @@ mkdir models
 mkdir train
 mkdir valid
 
-echo "Downloading model"
+echo "Downloading .pth model"
 cd models/
 wget -O shot-type-classifier.pth https://www.dropbox.com/s/f9703kbb2l82fsd/stage-3-2.pth?dl=0
+echo "Downloading .pkl model (for inference)"
+wget -O shot-type-classifier.pkl https://www.dropbox.com/s/ixt7oxw8j54aorq/shot-type-classifier.pkl?dl=0
 
 echo "Downloading dummy training data"
 cd ../train/
