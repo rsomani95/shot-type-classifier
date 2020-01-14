@@ -93,3 +93,6 @@ Where `path_base` is the directory path, `path_img` the path to the images you w
 <p align='center'>
   <img src="README_imgs/tree-of-life1-49fe5c84-1c97-4a03-b245-97062d214db4.jpg" width="425"/> <img src="README_imgs/img_2_heatmap-21d792f5-3826-4e9e-af57-b1b18d9210a2.png" width="411"/>
 </p>
+
+<p align="justify"><h3>1. License</h3></p>
+This repository is released under the [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](https://github.com/rsomani95/shot-type-classifier/blob/master/LICENSE). See [here](https://creativecommons.org/licenses/by-nc/4.0/) for more details.
