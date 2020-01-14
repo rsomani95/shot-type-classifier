@@ -95,4 +95,5 @@ Where `path_base` is the directory path, `path_img` the path to the images you w
 </p>
 
 <p align="justify"><h3>License</h3></p>
+
 This repository is released under the [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](https://github.com/rsomani95/shot-type-classifier/blob/master/LICENSE). See [here](https://creativecommons.org/licenses/by-nc/4.0/) for more details.
