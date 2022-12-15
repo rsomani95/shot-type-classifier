@@ -1,4 +1,5 @@
 from fastai.vision import *
+from fastai.vision.data import ImageDataLoaders
 from pathlib import Path
 
 # Data Augmentations
@@ -30,7 +31,7 @@ def get_tfms(): return get_transforms(do_flip = True,
 
 def get_model_data(path):
     path = Path(path)
-    data = ImageDataBunch.from_folder(path, 'train', 'valid', size = (375, 666), ds_tfms = get_tfms(), bs=1,
+    data = ImageDataLoaders.from_folder(path, 'train', 'valid', size = (375, 666), ds_tfms = get_tfms(), bs=1,
                                       resize_method = ResizeMethod.SQUISH,
                                       num_workers = 0
                                      ).normalize(imagenet_stats)
